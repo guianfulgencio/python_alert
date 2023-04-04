@@ -1,0 +1,5 @@
+Value SN (\S+)
+
+Start
+  ^\S+\s\S+\s+\,\s\S+\s\S+\s+\,\sSN:\s${SN} -> Record
+

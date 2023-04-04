@@ -1,0 +1,4 @@
+Value LOCAL_HOST (\d+.\d+.\d+.\d+)
+
+Start
+  ^Local\shost\:\s${LOCAL_HOST} -> Record

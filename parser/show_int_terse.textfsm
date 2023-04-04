@@ -1,0 +1,6 @@
+Value Interface (\S+)
+Value Admin (up|down)
+Value Link (up|down)
+
+Start
+  ^${Interface}\s+${Admin}\s+${Link} -> Record

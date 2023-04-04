@@ -1,0 +1,13 @@
+variables:
+- group: tacacs_accounts
+- group: ado-pat-git-pipeline
+
+stages:
+
+- stage: Run_Ansible_Job
+  pool: ITC-ITSD-NA-Ansible-UK
+  jobs:
+  - job: Run_the_script
+    steps:
+    - script: python3 main_trigger.py $(ise_na_username) "$(ise_na_password)" $(msflow_snow_prod_username) "$(msflow_snow_prod_password)" $(INC) $(Build.BuildNumber)
+      displayName: 'main_trigger.py'      

@@ -1,0 +1,4 @@
+Value LOCALIP (\d+.\d+.\d+.\d+)
+
+Start
+  ^\S+\s\S+\s\S+\s\S+\s\S+\s${LOCALIP} -> Record

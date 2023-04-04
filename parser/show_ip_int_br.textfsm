@@ -1,0 +1,5 @@
+Value Interface (\S+)
+Value IP_Address (\d+.\d+.\d+.\d+)
+
+Start
+  ^${Interface}\s+${IP_Address}\s+ -> Record
